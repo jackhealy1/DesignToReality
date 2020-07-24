@@ -10,19 +10,29 @@ function Login() {
           <img src={logo} />
         </div>
         <div className="header">Login</div>
+        <p>Welcome</p>
         <div className="form">
           <div className="form-group">
-            <label htmlFor="username">Username</label>
-            <input type="text" name="username" placeholder="username" />
+            <label htmlFor="username">Email Address</label>
+            <input type="text" name="username" placeholder="email" />
           </div>
           <div className="form-group">
             <label htmlFor="password">Password</label>
             <input type="password" name="password" placeholder="password" />
           </div>
         </div>
+        <label className="remember">
+          <input
+            className="checkbox"
+            type="checkbox"
+            value="remember-this-device"
+            id="remember-this-device"
+          />
+          Remember this device
+        </label>
       </div>
       <div className="footer">
-        <button type="button" className="btn">
+        <button type="submit" className="btn">
           Login
         </button>
       </div>
