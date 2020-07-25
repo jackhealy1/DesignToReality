@@ -1,4 +1,5 @@
 import React from "react";
+import { CSSTransition } from "react-transition-group";
 import logo from "../logo.svg";
 import "./style.scss";
 
@@ -9,8 +10,8 @@ function Login() {
         <div className="image">
           <img src={logo} />
         </div>
-        <div className="header">Login</div>
-        <p>Welcome</p>
+        <div className="header">Good {}, welcome to Green.</div>
+        <p>Please sign in below.</p>
         <div className="form">
           <div className="form-group">
             <label htmlFor="username">Email Address</label>
@@ -30,11 +31,15 @@ function Login() {
           />
           Remember this device
         </label>
-      </div>
-      <div className="footer">
-        <button type="submit" className="btn">
-          Login
-        </button>
+
+        <div className="footer">
+          <button type="submit" className="btn">
+            Sign In
+          </button>
+          <button type="submit" className="btn register">
+            Register
+          </button>
+        </div>
       </div>
     </div>
   );
