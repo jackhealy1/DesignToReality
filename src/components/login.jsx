@@ -1,8 +1,7 @@
 import React from "react";
 import Header from "./header";
-import Inputs from "./inputs";
-import Button from "./button";
-import { Progress } from "./button";
+import Form from "./form";
+import Contact from "./contact";
 import "./style.scss";
 
 export default class Login extends React.Component {
@@ -11,8 +10,10 @@ export default class Login extends React.Component {
       <div className="base-container">
         <div className="content">
           <Header />
-          <Inputs />
-          <Button />
+          {/* <form onSubmit={this.SubmitForm}> */}
+          <Form />
+          {/* </form> */}
+          <Contact />
         </div>
       </div>
     );

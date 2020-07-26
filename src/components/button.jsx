@@ -13,6 +13,7 @@ export default class Button extends React.Component {
     return (
       <div className="button">
         <ProgressButton
+          type="submit"
           onClick={this.handleClick}
           state={this.state.buttonState}
         >
@@ -25,8 +26,19 @@ export default class Button extends React.Component {
   handleClick() {
     this.setState({ buttonState: "loading" });
     // make asynchronous call
-    setTimeout(() => {
-      this.setState({ buttonState: "success" });
-    }, 3000);
+    if (
+      this.props.emailError ||
+      this.props.pwordError ||
+      !this.props.emailValue ||
+      !this.props.pwordValue
+    ) {
+      setTimeout(() => {
+        this.setState({ buttonState: "error" });
+      }, 3000);
+    } else {
+      setTimeout(() => {
+        this.setState({ buttonState: "success" });
+      }, 3000);
+    }
   }
 }

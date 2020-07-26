@@ -1,9 +1,13 @@
 $base-green: #2eaf5f;
+$text-green: #1c693a;
 $light-green: #9eecbc;
 $border: #c5c5c5;
 $white: #ffffff;
 $error: #ed5565;
-$text: #474747;
+$text: #3b3b3b;
+$text-orange: #a36200;
+
+$font: "GothamPro";
 
 .base-container {
   width: 100%;
@@ -13,13 +17,13 @@ $text: #474747;
 
   .content {
     color: $text;
-    font-family: "GothamPro";
+    font-family: $font;
     display: flex;
     flex-direction: column;
 
     .image {
       width: 11em;
-      margin-bottom: 2.5em;
+      margin-bottom: 1.5em;
       margin-top: 0.5em;
       img {
         width: 100%;
@@ -36,11 +40,11 @@ $text: #474747;
       margin-top: 1em;
     }
 
-    .form {
-      margin-top: 2em;
+    .inputs {
+      margin-top: 1em;
       align-items: center;
 
-      .form-group {
+      .inputs-group {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -50,33 +54,41 @@ $text: #474747;
           font-weight: 200;
         }
         input {
-          margin-top: 6px;
+          margin-top: 0.3em;
           width: 30em;
           height: 3.7em;
           padding: 0px 10px;
           font-size: 0.9em;
           font-weight: 200;
-          font-family: "GothamPro";
+          font-family: $font;
           box-shadow: 0px 0px 1px 0.3px $border;
           border: 0;
           border-radius: 4px;
-          margin-bottom: 1em;
+          margin-bottom: 0.5em;
           transition: all 250ms ease-in-out;
           &:hover {
             background-color: $white;
-            box-shadow: 0px 0px 6px 0.3px $light-green;
+            box-shadow: 0px 0px 4px 0.3px $light-green;
           }
 
           &:focus {
             outline: none;
-            box-shadow: 0px 0px 6px 0.8px $base-green;
+            box-shadow: 0px 0px 4px 0.8px $base-green;
           }
+        }
+        p {
+          height: 1em;
+          font-size: 0.95em;
+          color: $text-orange;
+          margin: 0;
+          margin-bottom: 0.3em;
+          font-weight: 300;
         }
       }
     }
     .remember {
       font-size: 0.9em;
-      font-weight: 200;
+      font-weight: 300;
 
       .checkbox {
         vertical-align: bottom;
@@ -89,7 +101,7 @@ $text: #474747;
         box-shadow: none;
         font-size: 2em;
         &:hover {
-          box-shadow: 0px 0px 3px 0.3px $base-green;
+          box-shadow: 0px 0px 2px 0.1px $base-green;
         }
         &:checked {
           background-color: $base-green;
@@ -97,6 +109,22 @@ $text: #474747;
         }
       }
     }
+
+    .contact {
+      margin-top: 0.8em;
+      font-size: 1em;
+      font-weight: 400;
+      a {
+        text-decoration: none;
+        color: $text-green;
+        &:hover {
+          text-decoration: underline;
+          color: $text-orange;
+          cursor: pointer;
+        }
+      }
+    }
+
     .button {
       .pb-container {
         margin-top: 1.5em;
@@ -119,11 +147,17 @@ $text: #474747;
         outline: none;
         transition: background-color 0.3s, width 0.3s, border-width 0.3s,
           border-color 0.3s, border-radius 0.3s;
+        &:hover {
+          box-shadow: 0px 0px 2px 0px $border;
+        }
+        &:focus {
+          box-shadow: none;
+        }
       }
       .pb-container .pb-button span {
         display: inherit;
         transition: opacity 0.3s 0.1s;
-        font-family: "GothamPro";
+        font-family: $font;
         font-size: 1.3em;
         font-weight: 200;
       }
