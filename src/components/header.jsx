@@ -1,28 +1,31 @@
 import React from "react";
-import "./style.scss";
+import "../App.scss";
 import logo from "../logo.svg";
 
 export default class Header extends React.Component {
   render() {
+    //change greeting depending on time of day.
     const date = new Date();
     const currentTime = date.getHours();
 
     let greeting;
 
     if (currentTime < 12) {
-      greeting = "Good morning";
+      greeting = "morning";
     } else if (currentTime < 18) {
-      greeting = "Good afternoon";
+      greeting = "afternoon";
     } else {
-      greeting = "Good evening";
+      greeting = "evening";
     }
 
     return (
-      <div>
+      <div className="header">
         <div className="image">
-          <img src={logo} />
+          <a href="https://green.energy/">
+            <img src={logo} />
+          </a>
         </div>
-        <div className="greeting">{greeting}, welcome to Green.</div>
+        <div className="greeting">Good {greeting}, welcome to Green.</div>
         <p className="message">Please sign in below.</p>
       </div>
     );

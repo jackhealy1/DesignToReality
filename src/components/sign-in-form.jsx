@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "./button";
-import "./style.scss";
+import SignInButton from "./sign-in-button";
+import "../App.scss";
 
-export default class Form extends React.Component {
+export default class SignInForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,45 +17,36 @@ export default class Form extends React.Component {
     };
   }
 
-  submitForm = async (e) => {
-    e.preventDefault();
-    if (
-      this.state.errors.email.length > 0 &&
-      this.state.errors.password.length > 0
-    )
-      return false;
-    console.log(this.state);
-  };
-
+  // Email validation with regex.
   validateEmail = (email) => {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(String(email).toLowerCase()))
-      setTimeout(() => this.setErrors({ email: "Email is invalid" }), 800);
+      this.setErrors({ email: "Email is invalid" });
     else this.setErrors({ email: "" });
   };
 
+  //Password validation - 8 characters min.
   validatePassword = (password) => {
     if (password.length < 8)
-      setTimeout(
-        () =>
-          this.setErrors({
-            password: "Password must have at least 8 characters",
-          }),
-        800
-      );
+      this.setErrors({
+        password: "Password must have at least 8 characters",
+      });
     else this.setErrors({ password: "" });
   };
 
+  //Function applied in validation function to assign error to state.
   setErrors = (error) =>
     this.setState({
       errors: { ...this.state.errors, ...error },
     });
 
+  //On change function to check validation only if user has inputted text, left then returned.
+  //this enables the error message to disappear without the user needing to exit the input.
   handleInputChange = (e) => {
-    if (e.target.name === "email") {
+    if (e.target.name === "email" && this.state.errors.email.length > 0) {
       this.validateEmail(e.target.value);
     }
-    if (e.target.name === "password") {
+    if (e.target.name === "password" && this.state.errors.password.length > 0) {
       this.validatePassword(e.target.value);
     }
     this.setState({
@@ -97,7 +88,6 @@ export default class Form extends React.Component {
           />
           <p class="error">{this.state.errors.password}</p>
         </div>
-
         <label className="remember">
           <input
             className="checkbox"
@@ -108,7 +98,8 @@ export default class Form extends React.Component {
           Remember this device
         </label>
 
-        <Button
+        {/* Passing error and value parameters to button for animation validation */}
+        <SignInButton
           emailError={this.state.errors.email}
           pwordError={this.state.errors.password}
           emailValue={this.state.values.email}

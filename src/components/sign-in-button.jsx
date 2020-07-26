@@ -1,12 +1,33 @@
 import React from "react";
 import ProgressButton from "react-progress-button";
-import "./style.scss";
+import "../App.scss";
 
-export default class Button extends React.Component {
+export default class SignInButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = { buttonState: "" };
     this.handleClick = this.handleClick.bind(this);
+  }
+
+  //On click function to call the button animation depending on the result of email and password validation. Valid entry = green tick. Invalid entry = red cross.
+  handleClick() {
+    this.setState({ buttonState: "loading" });
+    // make asynchronous call
+    if (
+      this.props.emailError ||
+      this.props.pwordError ||
+      !this.props.emailValue ||
+      !this.props.pwordValue
+    ) {
+      //setTimeout imitates loading network request. Not for production.
+      setTimeout(() => {
+        this.setState({ buttonState: "error" });
+      }, 1500);
+    } else {
+      setTimeout(() => {
+        this.setState({ buttonState: "success" });
+      }, 1500);
+    }
   }
 
   render() {
@@ -21,24 +42,5 @@ export default class Button extends React.Component {
         </ProgressButton>
       </div>
     );
-  }
-
-  handleClick() {
-    this.setState({ buttonState: "loading" });
-    // make asynchronous call
-    if (
-      this.props.emailError ||
-      this.props.pwordError ||
-      !this.props.emailValue ||
-      !this.props.pwordValue
-    ) {
-      setTimeout(() => {
-        this.setState({ buttonState: "error" });
-      }, 3000);
-    } else {
-      setTimeout(() => {
-        this.setState({ buttonState: "success" });
-      }, 3000);
-    }
   }
 }

@@ -66,28 +66,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-margin-top: 2em;
-.btn {
-width: 7em;
-height: 3em;
-margin-right: 2em;
-font-family: "GothamPro";
-border-radius: 0.8em;
-box-shadow: 0px 0px 1px 0.3px #c5c5c5;
-border: 0;
-background-color: #ffffff;
-font-size: 0.9em;
-font-weight: 200;
-transition: all 30ms ease 0s;
-&:focus {
-outline: 0;
-color: black;
-background-color: #faffd1;
-}
-}
-.register {
-color: white;
-background-color: #2eaf5f;
-opacity: 0.9;
-}
