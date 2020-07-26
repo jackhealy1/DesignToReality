@@ -8,8 +8,11 @@ React
 Sass
 
 My Objective -
-To recreate the design
+To recreate the brief by creating a clean, attractive, responsive and interactive UI.
 
+To add interactivity where possible, with cursor highlighting, form validation and an animated 'Sign In' button.
+
+Use the company green as the base colour and choose sympathetic additional colours.
 Dependencies -
 Outside of the standard dependencies created by create-react-app and installing Sass I used -
 [react-progress-button](https://github.com/mathieudutour/react-progress-button)
@@ -32,12 +35,12 @@ Commit history -
 
 Images -
 
-![Main View](images/main.png?raw=true "Main View")
+![Main View](images/Main.png?raw=true "Main View")
 
-![Main View](images/mobile-view.png?raw=true "Mobile View")
+![Mobile View](images/Mobile-view.png?raw=true "Mobile View")
 
-![Main View](images/form-validation.png?raw=true "Form Validation")
+![Form Validation](images/Form-validation.png?raw=true "Form Validation")
 
-![Main View](images/button-error.png?raw=true "Button Error")
+![Button Error](images/button-error.png?raw=true "Button Error")
 
-![Main View](images/button-success.png?raw=true "Button Success")
+![Button Success](images/Button-success.png?raw=true "Button Success")
