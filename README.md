@@ -1,13 +1,13 @@
-Green.
-Front-end Developer - Remote Task - Design To Reality
+# Green. Front-end Developer - Remote Task - Design To Reality
 
-Submission by Jack Healy
+## Submission by Jack Healy
 
-Built with -
-React
-Sass
+**Built with**
 
-My Objective -
+- React
+- Sass
+
+**My Objective**
 To recreate the brief by creating a clean, attractive, responsive and interactive UI.
 
 To add interactivity where possible, with cursor highlighting, form validation and an animated Sign In button.
@@ -18,13 +18,29 @@ Packages -
 Outside of the standard dependencies created by create-react-app and installing Sass I used -
 [react-progress-button](https://github.com/mathieudutour/react-progress-button)
 
-Steps -
+**Steps**
 
+```
 1. Git clone repo.
 2. Run npm install.
 3. Run npm start.
+```
 
-Commit history -
+**Overview**
+
+I initially created the main login container, then added the component files I thought were needed. I started with a basic header and form. Then I styled the components so they closely imitated the brief. Once i had the basic structure, thought about what additional components and interactivity to add to enhance the form.
+
+I found an animated progress button that i thought would work well in place of back-end validation so I npm installed the relevant package, copied the associated css and worked it into my app. I adjusted some of the css to ensure the button fitted with my basic styling.
+
+I found some online examples of front-end validation and used these as a guide to build my code. I wanted it to be responsive to the users input without immediately showing an error if they were not finished typing. I built functions for the onChange and blur events so the error would show if the user enters then leaves the input with invalid data.The error state will change if the user returns and completes the entry (this time without having to leave the input).
+
+Once i had the front-end validation in place, I passed the error and email/password value parameters to the sign in button. This meant i could alter the onClick function so the error animation shows if the user has inputted an invalid or empty email or password. A success animation shows if both the email and password are valid.
+
+Once all of this was in place i worked on styling, refactoring and making sure that the page was responsive and mobile friendly. I found a [CDN for the Gotham font](https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css) and used [uiGradients](https://uigradients.com/) for the background css styling. I have tried to make my code concise and readable, I have also added some notes so that my process and thinking is more clear. I acknowledge that clean code should not require notes but in this instance it is a failsafe!
+
+I very much enjoyed my first attempt creating something with react and sass and would be delighted to meet with you and talk about it in more detail.
+
+**Commit history**
 
 1. Use terminal to create new react app 'design-to-reality'. First commit and push to GitHub.
 
@@ -44,7 +60,9 @@ Commit history -
 
 9. Refactor, check mobile responsiveness.
 
-Images -
+10. Final commit - README update and final code check.
+
+**Images**
 
 Main View
 

@@ -9,7 +9,7 @@ export default class SignInButton extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  //On click function to call the button animation depending on the result of email and password validation. Valid entry = green tick. Invalid entry = red cross.
+  //onClick function to call the button animation depending on the result of email and password validation. Valid entry = green tick. Invalid entry = red cross.
   handleClick() {
     this.setState({ buttonState: "loading" });
     // make asynchronous call
