@@ -1,6 +1,6 @@
-# Green. Front-end Developer - Remote Task - Design To Reality
+# Design To Reality - Login Screen
 
-## Submission by Jack Healy
+## By Jack Healy
 
 **Built with**
 
@@ -8,11 +8,11 @@
 - Sass
 
 **My Objective**
-To recreate the brief by creating a clean, attractive, responsive and interactive UI.
+To create a Login screen with a clean, attractive, responsive and interactive UI.
 
 To add interactivity where possible, with cursor highlighting, form validation and an animated Sign In button.
 
-Use the company green as the base colour and choose sympathetic additional colours.
+Use a sympathetic colour palette.
 
 Packages -
 Outside of the standard dependencies created by create-react-app and installing Sass I used -
@@ -36,9 +36,9 @@ I found some online examples of front-end validation and used these as a guide t
 
 Once i had the front-end validation in place, I passed the error and email/password value parameters to the sign in button. This meant i could alter the onClick function so the error animation shows if the user has inputted an invalid or empty email or password. A success animation shows if both the email and password are valid.
 
-Once all of this was in place i worked on styling, refactoring and making sure that the page was responsive and mobile friendly. I found a [CDN for the Gotham font](https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css) and used [uiGradients](https://uigradients.com/) for the background css styling. I have tried to make my code concise and readable, I have also added some notes so that my process and thinking is more clear. I acknowledge that clean code should not require notes but in this instance it is a failsafe!
+Once all of this was in place i worked on styling, refactoring and making sure that the page was responsive and mobile friendly. I found a [CDN for the desired font](https://homegroupsignindevtest.blob.core.windows.net/hmssignin/font.css) for the background css styling. I have tried to make my code concise and readable, I have also added some notes so that my process and thinking is more clear. I acknowledge that clean code should not require notes but in this instance it is a failsafe!
 
-I very much enjoyed my first attempt creating something with react and sass and would be delighted to meet with you and talk about it in more detail.
+I very much enjoyed my first attempt creating something with react and sass.
 
 **Commit history**
 
@@ -62,7 +62,7 @@ I very much enjoyed my first attempt creating something with react and sass and 
 
 10. Final commit - README update and final code check.
 
-**Images**
+<!-- **Images**
 
 Main View
 
@@ -82,4 +82,4 @@ Button Error
 
 Button Success
 
-![Button Success](images/Button-success.png?raw=true "Button Success")
+![Button Success](images/Button-success.png?raw=true "Button Success") -->
