@@ -1,12 +1,13 @@
 //Custom Fonts
 @import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
+@import url("https://homegroupsignindevtest.blob.core.windows.net/hmssignin/font.css");
 @import "variables";
 
 //Login Main Container
 .login {
   max-width: 40em;
   width: 100%;
-  max-height: 37em;
+  max-height: 40em;
   height: 100%;
   //min-height: 44em;
   display: flex;
@@ -34,7 +35,7 @@
     //Header
     .header {
       .image {
-        width: 11em;
+        width: 5em;
         margin-bottom: 1.5em;
         margin-top: 0.5em;
         a {

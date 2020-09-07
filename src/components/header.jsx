@@ -21,11 +21,11 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <div className="image">
-          <a href="https://green.energy/">
+          <a href="https://www.homegroup.org.uk/">
             <img src={logo} />
           </a>
         </div>
-        <div className="greeting">Good {greeting}, welcome to Green.</div>
+        <div className="greeting">Good {greeting}, welcome to Home Group.</div>
         <p className="message">Please sign in below.</p>
       </div>
     );
