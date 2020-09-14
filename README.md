@@ -28,7 +28,7 @@ Outside of the standard dependencies created by create-react-app and installing 
 
 **Overview**
 
-I initially created the main login container, then added the component files I thought were needed. I started with a basic header and form. Then I styled the components so they closely imitated the brief. Once i had the basic structure, thought about what additional components and interactivity to add to enhance the form.
+I initially created the main login container, then added the component files I thought were needed. I started with a basic header and form. Then I styled the components in a basic way. Once i had the basic structure, thought about what additional components and interactivity to add to enhance the form.
 
 I found an animated progress button that i thought would work well in place of back-end validation so I npm installed the relevant package, copied the associated css and worked it into my app. I adjusted some of the css to ensure the button fitted with my basic styling.
 

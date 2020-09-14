@@ -7,7 +7,7 @@ export default class Contact extends React.Component {
       <div className="contact">
         <p>
           Having Issues?&nbsp;
-          <a href="https://green.energy/contact">Talk to us.</a>
+          <a href="https://www.homegroup.org.uk/get-in-touch/">Talk to us.</a>
         </p>
       </div>
     );
