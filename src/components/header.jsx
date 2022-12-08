@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.scss";
-import logo from "../logo.svg";
+import logo from "../durham_logo.png";
 
 export default class Header extends React.Component {
   render() {
@@ -21,11 +21,11 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <div className="image">
-          <a href="https://www.homegroup.org.uk/">
-            <img src={logo} />
+          <a href="https://www.durham.ac.uk/homepage/">
+            <img src={logo}/>
           </a>
         </div>
-        <div className="greeting">Good {greeting}, welcome to Home Group.</div>
+        <div className="greeting">Good {greeting}, welcome to Durham University.</div>
         <p className="message">Please sign in below.</p>
       </div>
     );

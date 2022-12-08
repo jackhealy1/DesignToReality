@@ -1,11 +1,15 @@
-$base-green: #26818c;
-$text-green: #26818c;
+@import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
+@import url("https://homegroupsignindevtest.blob.core.windows.net/hmssignin/font.css");
+
+$base-green: #441640;
+$text-green: #4f1949;
 $light-green: #98cacf;
 $border: #aaaaaa;
 $white: #ffffff;
 $button-error: #ed5565;
 $text: #4f4e56;
-$text-orange: #ca9800;
-$gradient-yellow: #f0f0f0;
+$text-orange: #b18404;
+$gradient-yellow: #c199bd;
 
-$font: "Trueno";
+$font: 'Gotham Book';
+

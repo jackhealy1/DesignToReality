@@ -1,6 +1,6 @@
 //Custom Fonts
 @import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
-@import url("https://homegroupsignindevtest.blob.core.windows.net/hmssignin/font.css");
+@import url('https://fonts.cdnfonts.com/css/gotham-book');
 @import "variables";
 
 //Login Main Container
@@ -35,7 +35,7 @@
     //Header
     .header {
       .image {
-        width: 5em;
+        width: 15em;
         margin-bottom: 1.5em;
         margin-top: 0.5em;
         a {
@@ -47,7 +47,7 @@
         }
       }
       .greeting {
-        font-size: 1.8em;
+        font-size: 1.6em;
         margin-top: 0.5em;
         @media screen and (max-width: 600px) {
           font-size: 1.4em;
@@ -141,7 +141,7 @@
       .pb-container {
         margin-top: 1.5em;
         display: inline-block;
-        text-align: center;
+        text-align: start;
         width: 27%;
       }
       .pb-container .pb-button {
@@ -206,7 +206,6 @@
         border-color: transparent;
         cursor: auto;
         background-color: transparent;
-        padding: 0;
       }
       .pb-container.loading .pb-button span {
         transition: all 0.15s;
